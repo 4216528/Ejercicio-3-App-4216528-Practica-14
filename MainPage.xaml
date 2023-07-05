@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Ejercicio3.MainPage">
+
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="matriculas.png" 
+                   
+        HeightRequest="100"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese las calificaciones en los recuadros"/>
+
+            <!-- Creamos 5 Entry para ingresar las calificaciones requeridas  -->
+
+            <Entry Margin="10,10,10,10" Placeholder="Calificación 1" x:Name="C1Entry" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Calificación 2" x:Name="C2Entry" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Calificación 3" x:Name="C3Entry" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Calificación 4" x:Name="C4Entry" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Calificación 5" x:Name="C5Entry" />
+
+            <!-- Agregamos dos label uno para mostrar el resultado y el otro para un texto personalizado -->
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="El promedio es:"/>
+
+            <Label TextColor="Purple" FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="" x:Name="Resultado"/>
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Calcular promedio" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
